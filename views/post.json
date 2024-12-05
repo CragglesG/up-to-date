@@ -1,0 +1,110 @@
+{
+  "type": "modal",
+  "title": {
+    "type": "plain_text",
+    "text": "Up To Date Posting Tool",
+    "emoji": true
+  },
+  "submit": {
+    "type": "plain_text",
+    "text": "Post",
+    "emoji": true
+  },
+  "close": {
+    "type": "plain_text",
+    "text": "Cancel",
+    "emoji": true
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Welcome to the Up To Date posting tool. You can post announcements, news, or general happenings to the Up To Date feed with this tool.\n\n _Don't know what Up To Date is? Run `/getmeuptodate` to learn more._"
+      }
+    },
+    {
+      "type": "input",
+      "element": {
+        "type": "plain_text_input",
+        "action_id": "plain_text_input-action"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "Post Title (keep it short and simple)",
+        "emoji": true
+      }
+    },
+    {
+      "type": "input",
+      "element": {
+        "type": "rich_text_input",
+        "action_id": "rich_text_input-action"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "Post Content",
+        "emoji": true
+      }
+    },
+    {
+      "type": "input",
+      "element": {
+        "type": "multi_static_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select topics",
+          "emoji": true
+        },
+        "options": [
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "*plain_text option 0*",
+              "emoji": true
+            },
+            "value": "value-0"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "*plain_text option 1*",
+              "emoji": true
+            },
+            "value": "value-1"
+          },
+          {
+            "text": {
+              "type": "plain_text",
+              "text": "*plain_text option 2*",
+              "emoji": true
+            },
+            "value": "value-2"
+          }
+        ],
+        "action_id": "multi_static_select-action"
+      },
+      "label": {
+        "type": "plain_text",
+        "text": "Topics",
+        "emoji": true
+      }
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "*Origin Channel*"
+      },
+      "accessory": {
+        "type": "multi_conversations_select",
+        "placeholder": {
+          "type": "plain_text",
+          "text": "Select a channel",
+          "emoji": true
+        },
+        "action_id": "multi_conversations_select-action"
+      }
+    }
+  ]
+}
