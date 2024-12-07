@@ -6,6 +6,6 @@ _More coming soon_
 ## To-do
 - [x] Implement setup
 - [x] Implement posting tool
-- [] Implement topic tool
-- [] Implement topic selector live updating
-- [] Implement feed
+- [ ] Implement topic tool
+- [ ] Implement topic selector live updating
+- [ ] Implement feed
