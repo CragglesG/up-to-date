@@ -1,0 +1,76 @@
+{
+    "blocks": [
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "*Welcome to Up To Date!*\n\nUp To Date is a Slack bot that provides you with a personalised feed of announcements, news, and happenings within the Slack. Let's get you set up to use Up To Date!\n\n"
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "Up To Date uses topics to personalise your feed. Click the adjacent button to choose topics that interest you (at least one)."
+            },
+            "accessory": {
+                "type": "multi_static_select",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Choose topics",
+                    "emoji": true
+                },
+                "options": [
+                    {
+                        "text": {
+                            "type": "plain_text",
+                            "text": "*plain_text option 0*",
+                            "emoji": true
+                        },
+                        "value": "value-0"
+                    },
+                    {
+                        "text": {
+                            "type": "plain_text",
+                            "text": "*plain_text option 1*",
+                            "emoji": true
+                        },
+                        "value": "value-1"
+                    },
+                    {
+                        "text": {
+                            "type": "plain_text",
+                            "text": "*plain_text option 2*",
+                            "emoji": true
+                        },
+                        "value": "value-2"
+                    }
+                ],
+                "action_id": "signup-topics-action"
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "You can subscribe to a channel to recieve posts from that channel. Click the adjacent button to choose channels to subscribe to (at least one)."
+            },
+            "accessory": {
+                "type": "multi_conversations_select",
+                "placeholder": {
+                    "type": "plain_text",
+                    "text": "Choose channels",
+                    "emoji": true
+                },
+                "action_id": "signup-channels-action"
+            }
+        },
+        {
+            "type": "section",
+            "text": {
+                "type": "mrkdwn",
+                "text": "You're all set up! If you want to make a post, run `/utdpost`. The post will be sent to the feeds of users who have subscribed to the topics and channels that the post is relevant to. To add a topic, run `/utdtopic`. Oh, and to check your feed, take a look at my home page. See ya' round!"
+            }
+        }
+    ]
+}

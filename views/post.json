@@ -1,5 +1,6 @@
 {
   "type": "modal",
+  "callback_id": "post-modal",
   "title": {
     "type": "plain_text",
     "text": "Up To Date Posting Tool",
@@ -27,11 +28,11 @@
       "type": "input",
       "element": {
         "type": "plain_text_input",
-        "action_id": "plain_text_input-action"
+        "action_id": "post-title-action"
       },
       "label": {
         "type": "plain_text",
-        "text": "Post Title (keep it short and simple)",
+        "text": "Post Title (keep it short and simple, no special characters other than hyphens and underscores)",
         "emoji": true
       }
     },
@@ -39,7 +40,7 @@
       "type": "input",
       "element": {
         "type": "rich_text_input",
-        "action_id": "rich_text_input-action"
+        "action_id": "post-content-action"
       },
       "label": {
         "type": "plain_text",
@@ -82,7 +83,7 @@
             "value": "value-2"
           }
         ],
-        "action_id": "multi_static_select-action"
+        "action_id": "post-topics-action"
       },
       "label": {
         "type": "plain_text",
@@ -103,7 +104,7 @@
           "text": "Select a channel",
           "emoji": true
         },
-        "action_id": "multi_conversations_select-action"
+        "action_id": "post-channels-action"
       }
     }
   ]
