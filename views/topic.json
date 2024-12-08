@@ -1,0 +1,53 @@
+{
+	"type": "modal",
+    "callback_id": "topic-modal",
+	"title": {
+		"type": "plain_text",
+		"text": "Up To Date Topic Adder",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Add",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+        {
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Please make sure that the topic you want to add is not already present.",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "topic-name-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Topic Name (up to 50 characters)",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "topic-id-action"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Topic ID (no spaces, up to 36 characters)",
+				"emoji": true
+			}
+		}
+	]
+}

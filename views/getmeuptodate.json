@@ -14,39 +14,14 @@
                 "text": "Up To Date uses topics to personalise your feed. Click the adjacent button to choose topics that interest you (at least one)."
             },
             "accessory": {
-                "type": "multi_static_select",
+                "type": "multi_external_select",
                 "placeholder": {
                     "type": "plain_text",
                     "text": "Choose topics",
                     "emoji": true
                 },
-                "options": [
-                    {
-                        "text": {
-                            "type": "plain_text",
-                            "text": "*plain_text option 0*",
-                            "emoji": true
-                        },
-                        "value": "value-0"
-                    },
-                    {
-                        "text": {
-                            "type": "plain_text",
-                            "text": "*plain_text option 1*",
-                            "emoji": true
-                        },
-                        "value": "value-1"
-                    },
-                    {
-                        "text": {
-                            "type": "plain_text",
-                            "text": "*plain_text option 2*",
-                            "emoji": true
-                        },
-                        "value": "value-2"
-                    }
-                ],
-                "action_id": "signup-topics-action"
+                "action_id": "signup-topics-action",
+                "min_query_length": 0
             }
         },
         {

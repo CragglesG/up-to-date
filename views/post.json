@@ -51,39 +51,14 @@
     {
       "type": "input",
       "element": {
-        "type": "multi_static_select",
+        "type": "multi_external_select",
         "placeholder": {
           "type": "plain_text",
           "text": "Select topics",
           "emoji": true
         },
-        "options": [
-          {
-            "text": {
-              "type": "plain_text",
-              "text": "*plain_text option 0*",
-              "emoji": true
-            },
-            "value": "value-0"
-          },
-          {
-            "text": {
-              "type": "plain_text",
-              "text": "*plain_text option 1*",
-              "emoji": true
-            },
-            "value": "value-1"
-          },
-          {
-            "text": {
-              "type": "plain_text",
-              "text": "*plain_text option 2*",
-              "emoji": true
-            },
-            "value": "value-2"
-          }
-        ],
-        "action_id": "post-topics-action"
+        "action_id": "post-topics-action",
+        "min_query_length": 0
       },
       "label": {
         "type": "plain_text",
