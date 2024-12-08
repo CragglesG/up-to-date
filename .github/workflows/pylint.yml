@@ -16,7 +16,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip slack-bolt appwrite python-dotenv
+        python -m pip install --upgrade pip slack-bolt appwrite python-dotenv uvicorn
         pip install pylint
     - name: Analysing the code with pylint
       run: |
