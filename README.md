@@ -1,9 +1,10 @@
 # Up To Date
+
 Up To Date is a Slack bot that provides you with a personalised feed of announcements, news, and happenings.
 
 ## How Do I Use It?
 
-For the moment, you can only use Up To Date if you're in the [Hack Club Slack](https://hackclub.com/slack). Start by running `/getmeuptodate`. From there, you can select topics and channels that interest you. Whenever a post associated with one of your chosen topics or channels is created, you'll receive a DM with its contents. You can select new topics and channels at any time by running `/getmeuptodate` again/
+For the moment, you can only use Up To Date if you're in the [Hack Club Slack](https://hackclub.com/slack). Start by running `/getmeuptodate`. From there, you can select topics and channels that interest you. Whenever a post associated with one of your chosen topics or channels is created, you'll receive a DM with its contents. You can select new topics and channels at any time by running `/getmeuptodate` again.
 
 ### How To Post
 
@@ -15,4 +16,4 @@ Adding topics works similarly to creating posts. You can use the `/utdtopic` com
 
 ## Bug Reports & Feature Requests
 
-If you find a bug or have a feature request, you can either create an issue or DM @Craig on Slack. Make sure to check for existing open issues before opening a new one or DMing me.
+If you find a bug or have a feature request, you can either create an issue or DM [@Craig](https://hackclub.slack.com/archives/D07FBU5TZ4L) on Slack. Make sure to check for existing open issues before opening a new one or DMing me.
